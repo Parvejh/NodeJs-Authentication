@@ -33,6 +33,7 @@ It is build using NodeJs, ExpressJs, EJS , MongoDb , HTML, CSS, Javascript.
         * GOOGLE_CLIENT_ID = "Your google oauth client id"
         * GOOGLE_CLIENT_SECRET = "Your google oauth client secret"
         * GOOGLE_CALLBACK = "Your callback url for google authentication"
+        * LINK_URL = "https:localhost:PORT" --> PORT is your port number
 * Install all required packages
     npm install 
 * Run project 
