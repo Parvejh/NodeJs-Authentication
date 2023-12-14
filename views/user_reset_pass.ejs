@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="/css/signup.css">
+
+<div id="container">
+    <div class="colordiv">
+        <h2>Node Js</h2>
+        <h2>Authentication</h2>
+    </div>
+    <h4>Reset Password</h4>
+    <form action="/resetPassword" method="POST">
+        <label for="">Hello <%= locals.user.name %></label>
+        <input type="hidden" name="email" value="<%= locals.user.email %>">
+        <label for="password">new Password</label>
+        <input type="password" name="password" required>
+
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" name="confirmPassword" required>
+
+        <button type="submit">Reset Password</button>
+    </form>
+
+    <a href="/">Profile</a>
+</div>

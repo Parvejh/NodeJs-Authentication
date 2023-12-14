@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/signup.css">
+<div id="container">
+    <div class="colordiv">
+        <h2>Node Js</h2>
+        <h2>Authentication</h2>
+    </div>
+    <h4>Register</h4>
+    <form action="/createUser" method="POST">
+        <label for="name">Name</label>
+        <input type="text" name="name" required>
+        
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" >
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" required>
+
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" name="confirmPassword" required>
+
+        <button type="submit">Register User</button>
+    </form>
+
+    <a href="/">Sign In</a>
+</div>

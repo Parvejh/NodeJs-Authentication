@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <!-- <link rel="stylesheet" href="/css/header.css"> -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="/css/layout.css">
+    <%- style %>
+</head>
+<body>
+
+    <div id="main-container">
+        <%- body %>
+    </div>
+
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <%- script %>
+    <script>
+        <% if(flash.error && flash.error.length > 0){ %>
+            alertify.error(`<%= flash.error %>`)
+        <% } %>
+        <% if(flash.success && flash.success.length > 0){ %>
+            alertify.success(`<%= flash.success %>`)
+        <% } %>
+    </script>
+</body>
+</html>

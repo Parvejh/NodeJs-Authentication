@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/css/profile.css">
+
+<!-- <div id="container">
+    <h3>Hello <%= locals.user.name %></h3>
+    <h4>Email ,  <%= locals.user.email %></h4>
+    <a href="/logout">Log Out</a>
+    <a href="/resetPassword">Reset Password</a>
+</div> -->
+
+
+<div class="bg-cover"></div>
+<div class="container">
+  <div class="header">
+    <i class="fa fa-bars"></i>
+    <i class="fa fa-cog"></i>
+  </div>
+  <div class="middle">
+    <img src="http://www.tomatinatrip.com/wp-content/uploads/2015/07/Picture-of-person.png" alt="" class="user-pic" />
+    <h4 class="name"><%= locals.user.name %></h4>
+    <h4 class="work"><%= locals.user.email %></h4>
+    <h4 class="social"><i class="fa fa-facebook"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-dribbble"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-twitter"></i></h4>
+  </div>
+  <div class="footer">
+   <button class="btn-follow">follow </button><br/>
+    <i class="fa fa-lock"></i>
+    <br/>
+    <div class="buttondiv">
+      <h4>
+        <a href="/logout">
+          Log Out
+        </a>
+      </h4>
+      <h4> 
+        <a href="/resetPassword">
+          Reset Password
+        </a>
+      </h4>
+    </div>
+  </div>
+</div>
