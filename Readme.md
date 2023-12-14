@@ -3,7 +3,7 @@
 A complete user authentication app created for registering new users, loggin in for registered users, social sign up / login with google, reset password, forget password features.
 It is build using NodeJs, ExpressJs, EJS , MongoDb , HTML, CSS, Javascript.
 
-### 🔗 Hosted link:  
+### 🔗 Hosted link:  https://nodejs-authentication-4kyu.onrender.com
 
 ## ⚙️ Functionality 
 - User signUp and signIn
